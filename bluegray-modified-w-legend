@@ -1,0 +1,75 @@
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/bluegray/puml-theme-bluegray.puml
+
+skinparam DefaultFontColor black
+skinparam DefaultFontSize 18
+skinparam DefaultFontName Roboto
+skinparam DatabaseBorderColor #FFF
+skinparam ComponentBorderColor #ADD8E6
+skinparam QueueBorderColor #FFF
+skinparam QueueFontColor #FFF
+skinparam CloudBorderColor #ADD8E6
+
+skinparam DatabaseBackgroundColor #FFD54F
+skinparam QueueBackgroundColor #9c27b0
+skinparam ArrowThickness 1
+
+skinparam component {
+    BackgroundColor<<external>> #607d8b
+    FontColor<<external>> #fff
+}
+skinparam rectangle {
+    BackgroundColor<<external>> #607d8b
+    FontColor<<external>> #fff
+}
+
+!$output = "FF5722"
+!$outputEvent = "FFC300"
+!$input = "4CAF50"
+!$processing = "03A9F4"
+!$trigger = "6A1B9A"
+!$manual = "D84315"
+
+!$info = "BBDEFB"
+!$warning = "FFE0B2"
+!$error = "F8BBD0"
+
+!$dev = "C8E6C9"
+!$qa = "E1BEE7"
+!$prod = "BBDEFB"
+
+!$external = "607d8b"
+!$playground = "FFD54F"
+!$bronze = "D2B48C"
+!$silver = "E0E0E0"
+!$gold = "FFF176"
+!$platinum = "B0BEC5"
+
+skinparam backgroundColor #FFF
+skinparam SequenceLifeLineBorderColor black
+
+'--- config end ---
+
+legend right
+  | |= Colour Legend |
+  | |= Messages |
+  |<#BBDEFB> | Info |
+  |<#FFE0B2> | Warning |
+  |<#F8BBD0> | Error |
+  | |= Environments |
+  |<#C8E6C9> | Dev Environment |
+  |<#E1BEE7> | QA Environment |
+  |<#BBDEFB> | Prod Environment |
+  |<#607d8b> | External to system |
+  |<#FFD54F> | Playground/Unclassified |
+  |<#D2B48C> | Bronze DB Level |
+  |<#E0E0E0> | Silver DB Level |
+  |<#FFF176> | Gold DB Level |
+  |<#B0BEC5> | Platinum DB Level |
+  | |= Flows |
+  |<#6A1B9A> | Trigger |
+  |<#D84315> | Human Action |
+  |<#FF5722> | Flow out of the system |
+  |<#FFC300> | Output Event |
+  |<#4CAF50> | Flow into the system |
+  |<#03A9F4> | Internal flow/processing |
+endlegend
